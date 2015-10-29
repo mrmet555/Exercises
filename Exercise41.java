@@ -1,3 +1,28 @@
+
+
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+import javax.swing.JOptionPane;
+
+public class ClassExercise41 extends Application {
+    int tries =0;
+            
+    @Override 
+    public void start(Stage primaryStage) {
+        Button submitBtn = new Button();
+        submitBtn.setText("Submit");
+        Label userNameLbl = new Label("Username:");
+        Label passwordLbl = new Label("Password:");
+        TextField userNameTxtFld = new TextField();
         PasswordField pwTxtFld = new PasswordField();
         String[] corUser = {"Daniel", "Michael", "Green"};
         String[] corPass = {"First", "Second", "Third"};
